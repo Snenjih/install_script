@@ -49,11 +49,18 @@ Um eine neue Datenbank zu erstellen, verwende den folgenden Befehl:
 CREATE DATABASE neue_datenbank;
 ```
 
+### Exit MySQL
+Nutze den folgenden Befehl um die MySQL Console zu verlassen:
+```bash
+QUIT;
+```
+
 ### Flush Privileges
 Nachdem du Benutzer und Berechtigungen erstellt oder geändert hast, verwende FLUSH PRIVILEGES, um sicherzustellen, dass alle Änderungen wirksam werden:
 ```bash
 FLUSH PRIVILEGES;
 ```
+
 
 ### Datenbankberechtigungen verwalten
 Ersetze dabei neue_datenbank durch den name deiner Datenbank.
