@@ -19,6 +19,8 @@ Führe den folgenden Befehl auf deinem Debian 11 Server aus, um den Server einma
 ```bash
 apt-get update -y && apt-get upgrade -y && apt-get install sudo && sudo apt-get install curl
 
+```bash
+
 Führe den folgenden Befehl auf deinem Debian 11 Server aus, um das Installationsskript herunterzuladen und auszuführen:
 
 ```bash
