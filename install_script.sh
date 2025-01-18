@@ -17,15 +17,6 @@ sudo apt-get install -y git
 # Install htop
 sudo apt-get install -y htop
 
-# Install MySQL
-sudo apt-get update -y
-sudo apt install mariadb-server
-sudo mysql_secure_installation
-
-# Optional: Start and enable MySQL service
-sudo systemctl start mysql
-sudo systemctl enable mysql
-
 # Install ufw (Uncomplicated Firewall)
 sudo apt-get install -y ufw
 
@@ -34,8 +25,19 @@ sudo ufw allow 22
 sudo ufw allow 25565
 sudo ufw allow 25566
 
+# Install MySQL
+sudo apt-get update -y
+sudo apt install mariadb-server
+sudo mysql_secure_installation
+
+
+# Optional: Start and enable MySQL service
+sudo systemctl start mysql
+sudo systemctl enable mysql
+
 # Enable ufw
 sudo ufw enable
+
 
 echo "  "
 echo "  "
