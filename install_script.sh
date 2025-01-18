@@ -14,6 +14,9 @@ sudo apt-get install -y screen
 # Install git
 sudo apt-get install -y git
 
+# Install git
+sudo apt-get install -y wget
+
 # Install htop
 sudo apt-get install -y htop
 
