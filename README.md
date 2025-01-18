@@ -8,7 +8,7 @@ Dieses Repository enthält ein Bash-Skript, das die Installation der folgenden P
 - Git
 - htop
 
-### Voraussetzungen
+## Voraussetzungen
 
 Stelle sicher, dass `curl` auf deinem Server installiert ist, um das Skript auszuführen.
 
