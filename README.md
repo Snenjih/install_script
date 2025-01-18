@@ -68,7 +68,6 @@ Ersetze neuer_benutzer durch den namen deines benutzers und localhost durch die 
 Um einem Benutzer Berechtigungen für eine Datenbank zu erteilen, verwende die folgenden Befehle:
 ```bash
 GRANT ALL PRIVILEGES ON neue_datenbank.* TO 'neuer_benutzer'@'localhost';
-FLUSH PRIVILEGES;
 ```
 
 # UFW Firewall
