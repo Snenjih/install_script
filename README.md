@@ -24,6 +24,7 @@ apt-get update -y && apt-get upgrade -y && apt-get install sudo -y && sudo apt-g
 Führe den folgenden Befehl auf deinem Debian 11 Server aus, um das Installationsskript herunterzuladen und auszuführen:
 
 ```bash
-sudo apt-get update -y && curl -O https://raw.githubusercontent.com/Snenjih/install_script/master/install_script.sh && chmod +x install_script.sh && ./install_script.sh
+sudo apt-get update -y && sudo apt-get install curl -y && curl -O https://raw.githubusercontent.com/Snenjih/install_script/refs/heads/main/install_script.sh && chmod +x install_script.sh && ./install_script.sh
+
 
 ```
