@@ -4,7 +4,8 @@
 sudo apt-get update
 
 # Install Java 21
-sudo apt-get install -y openjdk-21-jdk
+wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
+sudo dpkg -i jdk-21_linux-x64_bin.deb
 
 # Install screen
 sudo apt-get install -y screen
@@ -22,5 +23,9 @@ sudo apt-get install -y mysql-server
 # Optional: Start and enable MySQL service
 sudo systemctl start mysql
 sudo systemctl enable mysql
+
+echo "  "
+echo "Java Version"
+java -version
 
 echo "Installation abgeschlossen!"
