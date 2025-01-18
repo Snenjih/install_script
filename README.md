@@ -17,4 +17,4 @@ Stelle sicher, dass `curl` auf deinem Server installiert ist, um das Skript ausz
 Führe den folgenden Befehl auf deinem Debian 11 Server aus, um das Installationsskript herunterzuladen und auszuführen:
 
 ```bash
-sudo apt-get update -y && sudo apt-get install curl && curl -O https://raw.githubusercontent.com/dein-benutzername/dein-repository-name/master/install_script.sh && chmod +x install_script.sh && ./install_script.sh
+sudo apt-get update -y && sudo apt-get install curl && curl -O https://raw.githubusercontent.com/Snenjih/install_script/master/install_script.sh && chmod +x install_script.sh && ./install_script.sh
