@@ -8,10 +8,28 @@ Dieses Repository enthält ein Bash-Skript, das die Installation der folgenden P
 - Git
 - htop
 
+
 # Voraussetzungen
 
 Stelle sicher, dass `curl` auf deinem Server installiert ist, um das Skript auszuführen.
 
+
+# Installation des Skriptes
+Führe den folgenden Befehl auf deinem Debian 11 Server aus, um den Server einmal zu aktualisieren und anschließend sudo,curl zu instalieren 
+
+```bash
+apt-get update -y && apt-get upgrade -y && apt-get install sudo -y && sudo apt-get install curl -y
+```
+
+Führe den folgenden Befehl auf deinem Debian 11 Server aus, um das Installationsskript herunterzuladen und auszuführen:
+
+```bash
+sudo apt-get update -y && sudo apt-get install curl -y && curl -O https://raw.githubusercontent.com/Snenjih/install_script/refs/heads/main/install_script.sh && chmod +x install_script.sh && ./install_script.sh
+```
+
+
+
+# Befehle und TIPS:
 # MySQL DB / MariaDB
 ### Zugriff auf die MySQL-Datenbank
 Um auf die MySQL-Datenbank zuzugreifen, verwende den folgenden Befehl:
@@ -88,17 +106,3 @@ Die MOTD-Datei (Message of the Day) befindet sich in /etc/motd. Diese Datei wird
 sudo nano /etc/motd
 ```
 
-
-# Installation des Skriptes
-
-Führe den folgenden Befehl auf deinem Debian 11 Server aus, um den Server einmal zu aktualisieren und anschließend sudo,curl zu instalieren 
-
-```bash
-apt-get update -y && apt-get upgrade -y && apt-get install sudo -y && sudo apt-get install curl -y
-```
-
-Führe den folgenden Befehl auf deinem Debian 11 Server aus, um das Installationsskript herunterzuladen und auszuführen:
-
-```bash
-sudo apt-get update -y && sudo apt-get install curl -y && curl -O https://raw.githubusercontent.com/Snenjih/install_script/refs/heads/main/install_script.sh && chmod +x install_script.sh && ./install_script.sh
-```
