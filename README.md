@@ -17,7 +17,7 @@ Stelle sicher, dass `curl` auf deinem Server installiert ist, um das Skript ausz
 Führe den folgenden Befehl auf deinem Debian 11 Server aus, um den Server einmal zu aktualisieren und anschließend sudo,curl zu instalieren 
 
 ```bash
-apt-get update -y && apt-get upgrade -y && apt-get install sudo && sudo apt-get install curl
+apt-get update -y && apt-get upgrade -y && apt-get install sudo -y && sudo apt-get install curl -y
 
 ```
 
