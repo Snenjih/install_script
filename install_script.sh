@@ -26,6 +26,17 @@ sudo mysql_secure_installation
 sudo systemctl start mysql
 sudo systemctl enable mysql
 
+# Install ufw (Uncomplicated Firewall)
+sudo apt-get install -y ufw
+
+# Allow necessary ports
+sudo ufw allow 22
+sudo ufw allow 25565
+sudo ufw allow 25566
+
+# Enable ufw
+sudo ufw enable
+
 echo "  "
 echo "  "
 echo "  "
@@ -54,3 +65,8 @@ echo " _____| || | |   ||   |___ | | |   ||       ||   ||   _   |     | | |   ||
 echo "|_______||_|  |__||_______||_|  |__||_______||___||__| |__|     |_|  |__||_______|  |___|  |__| |__||_______||___|  |_||___| |_| "
 
 echo "Installation abgeschlossen!"
+
+echo "Nutze den folgenden Behfel um die Ports in der Firewall freizuschalten"
+echo "Ersetze <port> durch den port den du freischalten möchtest"
+echo " "
+echo "ufw allow <port>"
