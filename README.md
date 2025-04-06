@@ -28,6 +28,14 @@ sudo apt-get update -y && sudo apt-get install curl -y && curl -O https://raw.gi
 ```
 
 
+# One-Command Instalation
+
+```bash
+apt-get update -y && apt-get upgrade -y && apt-get install sudo -y && sudo apt-get install curl -y && curl -O https://raw.githubusercontent.com/Snenjih/install_script/refs/heads/main/install_script.sh && chmod +x install_script.sh && ./install_script.sh
+```
+
+
+
 
 # Befehle und TIPS:
 # MySQL DB / MariaDB
