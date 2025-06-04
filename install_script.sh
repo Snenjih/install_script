@@ -4,8 +4,7 @@
 sudo apt-get update
 
 # Install Java 21
-wget https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.deb
-sudo dpkg -i jdk-23_linux-x64_bin.deb
+wget https://download.oracle.com/java/24/latest/jdk-24_linux-x64_bin.deb & sudo dpkg -i jdk-24_linux-x64_bin.deb
 
 # Install screen
 sudo apt-get install -y screen
