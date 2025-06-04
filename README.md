@@ -45,6 +45,21 @@ Um auf die MySQL-Datenbank zuzugreifen, verwende den folgenden Befehl:
 mysql -u root -p
 ```
 
+### Remote User Erstellen Beispiel:
+```bash
+CREATE USER 'remoteuser'@'%' IDENTIFIED BY 'dein_sicheres_passwort';
+```
+
+```bash
+GRANT ALL PRIVILEGES ON *.* TO 'remoteuser'@'%' WITH GRANT OPTION;
+```
+
+```bash
+FLUSH PRIVILEGES;
+```
+
+
+
 ### Benutzer erstellen
 Um einen neuen Benutzer in MySQL zu erstellen, verwende die folgenden Befehle:
 ```bash
