@@ -27,10 +27,14 @@ sudo apt-get install -y ufw
 sudo ufw allow 22
 sudo ufw allow 25565
 sudo ufw allow 25566
+sudo ufw allow 3306
 
 # Install MySQL
 sudo apt-get update -y
-sudo apt install mariadb-server
+sudo apt-get update
+sudo apt-get install mariadb-server mariadb-client
+sudo systemctl start mariadb   # oder mysql
+sudo systemctl enable mariadb  # um den Dienst beim Booten zu starten
 sudo mysql_secure_installation
 
 
