@@ -5,8 +5,13 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 # Install Java 21
-wget https://download.oracle.com/java/24/latest/jdk-24_linux-x64_bin.deb
-sudo dpkg -i jdk-24_linux-x64_bin.deb
+apt install -y wget apt-transport-https
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+sudo apt install gpg -y
+echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+sudo apt update
+apt install temurin-24-jdk
+
 
 # Install screen
 sudo apt-get install -y screen
