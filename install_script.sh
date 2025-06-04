@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Update the package list
-sudo apt-get update
+sudo apt-get update -y
+sudo apt-get upgrade -y
 
 # Install Java 21
 wget https://download.oracle.com/java/24/latest/jdk-24_linux-x64_bin.deb
@@ -9,7 +10,6 @@ sudo dpkg -i jdk-24_linux-x64_bin.deb
 
 # Install screen
 sudo apt-get install -y screen
-
 
 # Install git
 sudo apt-get install -y git
@@ -31,7 +31,7 @@ sudo ufw allow 3306
 
 # Install MySQL
 sudo apt-get update -y
-sudo apt-get update
+sudo apt-get upgrade -y
 sudo apt-get install mariadb-server mariadb-client
 sudo systemctl start mariadb   # oder mysql
 sudo systemctl enable mariadb  # um den Dienst beim Booten zu starten
