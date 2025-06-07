@@ -3,6 +3,8 @@
 # Update the package list
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt-get install wget
+sudo apt-get install curl
 
 # Install Java 21
 apt install -y wget apt-transport-https
