@@ -1,4 +1,4 @@
-### Installations-Skript für Debian 11 Server und wichtige Informationen / TIPS
+### Installations-Skript für Debian 11 Server und wichtige Informationen
 
 Dieses Repository enthält ein Bash-Skript, das die Installation der folgenden Programme auf einem Debian 11 Server automatisiert:
 
